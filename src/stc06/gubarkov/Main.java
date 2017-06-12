@@ -29,15 +29,15 @@ public class Main {
         Group group = new Group("group1", new Date(), new Date());
         student.getGroups().add(group);
 
-        DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
         try(FileOutputStream oos =
                     new FileOutputStream("students.dat")) {
-            DocumentBuilder builder = factory.newDocumentBuilder();
-            DOMImplementation impl = builder.getDOMImplementation();
-            Document doc = impl.createDocument(null, null, null);
+            DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
+            DocumentBuilder db = dbf.newDocumentBuilder();
+            Document doc = db.newDocument();
 
             Element studentObj = doc.createElement("object");
             studentObj.setAttribute("type", "Student");
+            doc.appendChild(studentObj);
 
             Field groupsField = null;
             for (Field f : student.getClass().getDeclaredFields()) {

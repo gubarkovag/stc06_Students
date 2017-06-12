@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<object type="Student">
+  <field id="serialVersionUID" type="long" value="1"/>
+  <field id="dateOfBirth" type="Date" value="Mon Jun 12 20:44:38 MSK 2017"/>
+  <field id="groups" type="List" value="[stc06.gubarkov.models.Group@b1026630]"/>
+  <field id="firstName" type="String" value="Ivan"/>
+  <field id="secondName" type="String" value="Ivanovich"/>
+  <field id="surname" type="String" value="Ivanov"/>
+  <field id="contacts" type="List" value="[]"/>
+  <method id="equals" return="boolean">
+    <arg id="arg0" type="Object"/>
+  </method>
+  <method id="hashCode" return="int"/>
+  <method id="getContacts" return="List"/>
+  <method id="setSurname" return="void">
+    <arg id="arg0" type="String"/>
+  </method>
+  <method id="setSecondName" return="void">
+    <arg id="arg0" type="String"/>
+  </method>
+  <method id="getSurname" return="String"/>
+  <method id="setContacts" return="void">
+    <arg id="arg0" type="List"/>
+  </method>
+  <method id="getSecondName" return="String"/>
+  <method id="setDateOfBirth" return="void">
+    <arg id="arg0" type="Date"/>
+  </method>
+  <method id="setGroups" return="void">
+    <arg id="arg0" type="List"/>
+  </method>
+  <method id="setFirstName" return="void">
+    <arg id="arg0" type="String"/>
+  </method>
+  <method id="getDateOfBirth" return="Date"/>
+  <method id="getFirstName" return="String"/>
+  <method id="getGroups" return="List"/>
+  <object type="Group">
+    <field id="serialVersionUID" type="long" value="2"/>
+    <field id="name" type="String" value="group1"/>
+    <field id="started" type="Date" value="Mon Jun 12 20:44:38 MSK 2017"/>
+    <field id="finished" type="Date" value="Mon Jun 12 20:44:38 MSK 2017"/>
+    <method id="equals" return="boolean">
+      <arg id="arg0" type="Object"/>
+    </method>
+    <method id="hashCode" return="int"/>
+    <method id="getName" return="String"/>
+    <method id="setName" return="void">
+      <arg id="arg0" type="String"/>
+    </method>
+    <method id="setStarted" return="void">
+      <arg id="arg0" type="Date"/>
+    </method>
+    <method id="getFinished" return="Date"/>
+    <method id="getStudents" return="List"/>
+    <method id="setFinished" return="void">
+      <arg id="arg0" type="Date"/>
+    </method>
+    <method id="setStudents" return="void">
+      <arg id="arg0" type="List"/>
+    </method>
+    <method id="getStarted" return="Date"/>
+  </object>
+</object>
